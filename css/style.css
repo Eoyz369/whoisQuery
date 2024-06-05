@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use Helvetica Neue for Apple style */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Make the container responsive */
+    max-width: 800px; /* Limit the maximum width for larger screens */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+h1 {
+    text-align: center;
+    color: rgb(0, 123, 255); /* Apple blue color */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(0, 123, 255); /* Apple blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 86, 179); /* Darker blue on hover */
+}
+
+/* Results Styles */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+.progress-bar-inner {
+    height: 20px;
+    background-color: rgb(0, 123, 255); /* Apple blue color */
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    width: 0;
+    border-radius: 5px;
+}
+
+/* Domain List Styles */
+h2.domain {
+    color: rgb(0, 123, 255); /* Apple blue color */
+    cursor: pointer;
+}
+
+h4 {
+    color: #000;
+}
+
+.not-registered {
+    color: green;
+}
+
+/* CSS for file input and label */
+label[for="domains"] {
+    font-weight: bold;
+    margin-top: 10px; /* Adjust as needed */
+    display: block;
+}
+
+#fileInput {
+    margin-top: 5px; /* Adjust as needed */
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 90px); /* Adjust width to fit the container */
+    box-sizing: border-box;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Style the file input button */
+#fileInput::-webkit-file-upload-button {
+    padding: 8px 15px; /* Adjust padding as needed */
+    background-color: rgb(0, 123, 255); /* Apple blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fileInput::-webkit-file-upload-button:hover {
+    background-color: rgb(0, 86, 179); /* Darker blue on hover */
+}
+
+#fileInput::-webkit-file-upload-button:active {
+    background-color: #004080;
+}
+
+/* Style the "Clear uploaded file" button */
+#clearFileButton {
+    background-color: transparent;
+    color: rgb(0, 123, 255); /* Apple blue color */
+    border: none;
+    cursor: pointer;
+}
+
+#clearFileButton:hover {
+    text-decoration: underline;
+}
+
+/* CSS for label, file input, and button in one line */
+#fileInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
